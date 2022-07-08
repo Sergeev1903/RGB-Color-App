@@ -23,6 +23,8 @@ class GenerateColorViewController: UIViewController {
     @IBOutlet var greenTextField: UITextField!
     @IBOutlet var blueTextField: UITextField!
     
+    weak var viewColorDelegate: ViewColorDelegate?
+    
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +45,10 @@ class GenerateColorViewController: UIViewController {
         
     }
     
+    @IBAction func sendViewColor(_ sender: UIButton) {
+        viewColorDelegate?.getViewBackground(view: canvasView)
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func getValueFromSlider(_ sender: UISlider) {
         

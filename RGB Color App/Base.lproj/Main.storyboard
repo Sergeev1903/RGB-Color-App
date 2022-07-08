@@ -206,7 +206,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Save &amp; Back" cornerStyle="medium"/>
                                 <connections>
-                                    <segue destination="1z5-Bk-cgu" kind="unwind" unwindAction="unwindToSavedColor:" id="cK2-6c-vUI"/>
+                                    <action selector="savebackAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mJ2-JF-o33"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -240,7 +240,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="1z5-Bk-cgu" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3042.0289855072465" y="-4410.2678571428569"/>
         </scene>

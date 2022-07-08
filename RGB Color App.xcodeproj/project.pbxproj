@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D170FD8287870AC007BBB6C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D170FD7287870AC007BBB6C /* Protocols.swift */; };
 		1DA187382876B0590016FCA4 /* SavedColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA187372876B0590016FCA4 /* SavedColorViewController.swift */; };
 		1DE29019285C891A002E819A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE29018285C891A002E819A /* AppDelegate.swift */; };
 		1DE2901B285C891A002E819A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2901A285C891A002E819A /* SceneDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D170FD7287870AC007BBB6C /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		1DA187372876B0590016FCA4 /* SavedColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedColorViewController.swift; sourceTree = "<group>"; };
 		1DE29015285C891A002E819A /* RGB Color App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RGB Color App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE29018285C891A002E819A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				1DE29018285C891A002E819A /* AppDelegate.swift */,
+				1D170FD7287870AC007BBB6C /* Protocols.swift */,
 				1DE2901A285C891A002E819A /* SceneDelegate.swift */,
 				1DA187372876B0590016FCA4 /* SavedColorViewController.swift */,
 				1DE2901C285C891A002E819A /* GenerateColorViewController.swift */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D170FD8287870AC007BBB6C /* Protocols.swift in Sources */,
 				1DE2901D285C891A002E819A /* GenerateColorViewController.swift in Sources */,
 				1DE29019285C891A002E819A /* AppDelegate.swift in Sources */,
 				1DA187382876B0590016FCA4 /* SavedColorViewController.swift in Sources */,

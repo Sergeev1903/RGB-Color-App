@@ -19,16 +19,17 @@ class SavedColorViewController: UIViewController {
     
     @IBAction func editColor(_ sender: UIBarButtonItem) {
         let generateColorVC = storyboard?.instantiateViewController(withIdentifier: "idViewController") as! GenerateColorViewController
+        generateColorVC.viewColorDelegate = self
 //        navigationController?.pushViewController(generateColorVC, animated: true)
         present(generateColorVC, animated: true)
     
     }
     
-    @IBAction func unwindToSavedColor(_ unwindSegue: UIStoryboardSegue) {
-        let sourceViewController = unwindSegue.source as! GenerateColorViewController
-        savedCanvas.backgroundColor = sourceViewController.canvasView.backgroundColor
-        // Use data from the view controller which initiated the unwind segue
-    }
+//    @IBAction func unwindToSavedColor(_ unwindSegue: UIStoryboardSegue) {
+//        let sourceViewController = unwindSegue.source as! GenerateColorViewController
+//        savedCanvas.backgroundColor = sourceViewController.canvasView.backgroundColor
+//        // Use data from the view controller which initiated the unwind segue
+//    }
     
     /*
     // MARK: - Navigation
@@ -40,4 +41,12 @@ class SavedColorViewController: UIViewController {
     }
     */
 
+}
+
+extension SavedColorViewController: ViewColorDelegate {
+    func getViewBackground(view: UIView) {
+        savedCanvas.backgroundColor = view.backgroundColor
+    }
+    
+    
 }
