@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GenerateColorViewController: UIViewController {
     
     @IBOutlet var canvasView: UIView!
     
@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet var greenTextField: UITextField!
     @IBOutlet var blueTextField: UITextField!
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
         addDoneButtonTo(blueTextField)
         
     }
+    
     
     @IBAction func getValueFromSlider(_ sender: UISlider) {
         
@@ -68,7 +70,9 @@ class ViewController: UIViewController {
             blue: CGFloat(blueSlider.value / 255),
             alpha: 1
         )
+        
 //        view.backgroundColor = canvasView.backgroundColor
+
     }
     
     private func setValueForLabel() {
@@ -89,7 +93,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITextFieldDelegate {
+extension GenerateColorViewController: UITextFieldDelegate {
     
     // Скрываем клавиатуру нажатием на "Done"
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -129,7 +133,7 @@ extension ViewController: UITextFieldDelegate {
     }
 }
 
-extension ViewController {
+extension GenerateColorViewController {
     
     // Метод для отображения кнопки "Готово" на цифровой клавиатуре
     private func addDoneButtonTo(_ textField: UITextField) {
