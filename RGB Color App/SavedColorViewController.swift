@@ -20,8 +20,8 @@ class SavedColorViewController: UIViewController {
     @IBAction func editColor(_ sender: UIBarButtonItem) {
         let generateColorVC = storyboard?.instantiateViewController(withIdentifier: "idViewController") as! GenerateColorViewController
         generateColorVC.viewColorDelegate = self
-//        navigationController?.pushViewController(generateColorVC, animated: true)
-        present(generateColorVC, animated: true)
+        navigationController?.pushViewController(generateColorVC, animated: true)
+//        present(generateColorVC, animated: true)
     
     }
     

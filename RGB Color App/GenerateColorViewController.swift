@@ -47,7 +47,8 @@ class GenerateColorViewController: UIViewController {
     
     @IBAction func sendViewColor(_ sender: UIButton) {
         viewColorDelegate?.getViewBackground(view: canvasView)
-        dismiss(animated: true, completion: nil)
+//        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func getValueFromSlider(_ sender: UISlider) {
