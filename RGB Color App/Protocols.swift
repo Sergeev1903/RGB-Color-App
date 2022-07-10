@@ -9,4 +9,5 @@ import UIKit
 
 protocol ViewColorDelegate: AnyObject {
     func getViewBackground(view: UIView)
+    func getViewBackgroundColor(value: String)
 }

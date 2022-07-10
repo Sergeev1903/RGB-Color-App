@@ -24,6 +24,7 @@ class GenerateColorViewController: UIViewController {
     @IBOutlet var blueTextField: UITextField!
     
     weak var viewColorDelegate: ViewColorDelegate?
+    var generatedColorValue: String!
     
    
     override func viewDidLoad() {
@@ -47,6 +48,7 @@ class GenerateColorViewController: UIViewController {
     
     @IBAction func sendViewColor(_ sender: UIButton) {
         viewColorDelegate?.getViewBackground(view: canvasView)
+        viewColorDelegate?.getViewBackgroundColor(value: generatedColorValue)
 //        dismiss(animated: true, completion: nil)
         navigationController?.popViewController(animated: true)
     }
@@ -77,7 +79,7 @@ class GenerateColorViewController: UIViewController {
             blue: CGFloat(blueSlider.value / 255),
             alpha: 1
         )
-        
+        generatedColorValue = ("RGB: \(Int(redSlider.value)), \(Int(greenSlider.value)), \(Int(blueSlider.value))")
 //        view.backgroundColor = canvasView.backgroundColor
 
     }

@@ -11,6 +11,7 @@ class SavedColorViewController: UIViewController {
 
     @IBOutlet var savedCanvas: UIView!
     
+    @IBOutlet var savedColorTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,8 +45,13 @@ class SavedColorViewController: UIViewController {
 }
 
 extension SavedColorViewController: ViewColorDelegate {
+    func getViewBackgroundColor(value: String) {
+        savedColorTextField.text = value.description
+    }
+    
     func getViewBackground(view: UIView) {
         savedCanvas.backgroundColor = view.backgroundColor
+        
     }
     
     

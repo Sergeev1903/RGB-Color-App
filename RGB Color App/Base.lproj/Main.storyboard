@@ -19,7 +19,20 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNW-ch-7KS">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zlF-HX-2Bx">
+                                        <rect key="frame" x="20" y="431" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
                                 <color key="backgroundColor" red="0.20392158630000001" green="0.4196078479" blue="0.50980395079999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zlF-HX-2Bx" secondAttribute="trailing" constant="20" id="JPj-yN-ptF"/>
+                                    <constraint firstItem="zlF-HX-2Bx" firstAttribute="centerX" secondItem="BNW-ch-7KS" secondAttribute="centerX" id="PIi-h1-Doo"/>
+                                    <constraint firstItem="zlF-HX-2Bx" firstAttribute="centerY" secondItem="BNW-ch-7KS" secondAttribute="centerY" id="flL-cN-eve"/>
+                                    <constraint firstItem="zlF-HX-2Bx" firstAttribute="leading" secondItem="BNW-ch-7KS" secondAttribute="leading" constant="20" id="o9R-fP-tja"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mgo-0V-RJU"/>
@@ -41,6 +54,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="savedCanvas" destination="BNW-ch-7KS" id="q2d-JN-kOF"/>
+                        <outlet property="savedColorTextField" destination="zlF-HX-2Bx" id="Sht-Au-a9b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZm-Wr-gG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
